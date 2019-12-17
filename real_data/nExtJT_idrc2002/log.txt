@@ -1,0 +1,14 @@
+
+Sat Nov 30 17:42:08 2019	Starting simulations
+Sat Nov 30 17:42:08 2019	Cluster intialized successfully!
+Sat Nov 30 17:42:09 2019	Generating data...
+Sat Nov 30 17:42:10 2019	Entering foreach loop
+Sat Nov 30 17:42:12 2019	[83 %] method: baseline n: 1 loss: 1.14328764063759
+Sat Nov 30 17:42:12 2019	[83 %] method: glmnet n: 1 loss: 0.0890653353041365
+Sat Nov 30 17:42:13 2019	[83 %] method: nExtJT n: 1 loss: 0.225073116390954
+Sat Nov 30 17:42:13 2019	[83 %] method: JT n: 1 loss: 1.02777500163777
+Sat Nov 30 17:42:15 2019	[83 %] method: s4pm n: 1 loss: 0.768823516848066
+Sat Nov 30 17:42:15 2019	[83 %] method: agraph n: 1 loss: 0.541711600011546
+Sat Nov 30 17:42:15 2019	Simulations finished!
+Sat Nov 30 17:42:15 2019	Results saved
+Sat Nov 30 17:42:15 2019	THe END

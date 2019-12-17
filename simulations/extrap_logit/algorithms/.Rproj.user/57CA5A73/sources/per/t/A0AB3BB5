@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1574328944783.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3829168215",
+    "id" : "A0AB3BB5",
+    "lastKnownWriteTime" : 1574333460,
+    "last_content_update" : 1574333460603,
+    "path" : "~/Documents/Doctorado/Estancia/Algorithms/algorithms/call_s4pm.R",
+    "project_path" : "call_s4pm.R",
+    "properties" : {
+        "cursorPosition" : "1,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

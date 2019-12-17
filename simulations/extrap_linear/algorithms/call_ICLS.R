@@ -1,0 +1,27 @@
+library(RSSL)
+#source("performance.R")
+
+# Wrapper to call the ICLS classif. from Krijthe and Loog (2017). See R package `RSSL`
+# params: lambda1, lambda2
+call_ICLS = function(train, valid, test, params){
+  model = ICLeastSquaresClassifier(X = train$xL, y = factor(train$yL), X_u = train$xU, 
+                                   lambda1 = params[1], lambda2 = params[2])
+  
+  ypred = as.numeric(predict(model, valid$xL))-1
+  perf.valid = performance_measures(valid, ypred, type = "classification", fold = "valid")
+  
+  ypred = as.numeric(predict(model, test$xL))-1
+  perf.test = performance_measures(test, ypred, type = "classification", fold = "test")
+  
+  return(c(perf.valid, perf.test))
+}
+
+# #Example
+# data = simulate_extra(n = 100, p = 15, response = "logit")
+# train = s2Data(data$xL, data$yL, data$xU[1:50,])
+# valid = s2Data(data$xU[1:20,], data$yU[1:20], preprocess = train)
+# test = s2Data(data$xU, data$yU)
+# 
+# params = c(0.01, 0.01)
+# 
+# call_ICLS(train, valid, test, params)

@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1574326281281.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1250877282",
+    "id" : "392E2A63",
+    "lastKnownWriteTime" : 1574333471,
+    "last_content_update" : 1574341242812,
+    "path" : "~/Documents/Doctorado/Estancia/Algorithms/algorithms/call_JT.R",
+    "project_path" : "call_JT.R",
+    "properties" : {
+        "cursorPosition" : "37,37",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

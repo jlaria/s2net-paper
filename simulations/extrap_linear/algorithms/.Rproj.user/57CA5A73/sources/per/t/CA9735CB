@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1574333476776.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "889550530",
+    "id" : "CA9735CB",
+    "lastKnownWriteTime" : 1574334030,
+    "last_content_update" : 1574334030793,
+    "path" : "~/Documents/Doctorado/Estancia/Algorithms/algorithms/call_agraph.R",
+    "project_path" : "call_agraph.R",
+    "properties" : {
+        "cursorPosition" : "42,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

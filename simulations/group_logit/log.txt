@@ -1,0 +1,44 @@
+
+Tue Dec 17 09:44:42 2019	Starting simulations
+Tue Dec 17 09:44:42 2019	Cluster intialized successfully!
+Tue Dec 17 09:44:44 2019	Generating data...
+Tue Dec 17 09:44:45 2019	Entering foreach loop
+Tue Dec 17 09:44:47 2019	[14 %] method: glmnet n: 1 settings: 50 50 50 loss: 3.06888250300036
+Tue Dec 17 09:44:47 2019	[14 %] method: s2net n: 1 settings: 50 50 50 loss: 0.895717597553548
+Tue Dec 17 09:44:47 2019	[14 %] method: baseline n: 1 settings: 50 50 50 loss: 0.984523779848482
+Tue Dec 17 09:44:48 2019	[31 %] method: s2net n: 1 settings: 50 250 50 loss: 0.693147180559945
+Tue Dec 17 09:44:48 2019	[14 %] method: ICLS n: 1 settings: 50 50 50 loss: 19.428326588786
+Tue Dec 17 09:44:48 2019	[31 %] method: baseline n: 1 settings: 50 250 50 loss: 0.691076741735882
+Tue Dec 17 09:44:48 2019	[31 %] method: glmnet n: 1 settings: 50 250 50 loss: 1.31192591318264
+Tue Dec 17 09:44:48 2019	[14 %] method: agraph n: 1 settings: 50 50 50 loss: 1.7812541588758
+Tue Dec 17 09:44:48 2019	[14 %] method: s4pm n: 1 settings: 50 50 50 loss: NaN
+Tue Dec 17 09:44:48 2019	[47 %] method: s2net n: 1 settings: 50 50 100 loss: 0.693147180559945
+Tue Dec 17 09:44:48 2019	[47 %] method: baseline n: 1 settings: 50 50 100 loss: 0.693147180559945
+Tue Dec 17 09:44:49 2019	[47 %] method: glmnet n: 1 settings: 50 50 100 loss: 0.694247981397208
+Tue Dec 17 09:44:49 2019	[31 %] method: ICLS n: 1 settings: 50 250 50 loss: 11.6569539744065
+Tue Dec 17 09:44:49 2019	[31 %] method: agraph n: 1 settings: 50 250 50 loss: 0.709880328250059
+Tue Dec 17 09:44:49 2019	[47 %] method: ICLS n: 1 settings: 50 50 100 loss: 12.1318911352434
+Tue Dec 17 09:44:50 2019	[47 %] method: s4pm n: 1 settings: 50 50 100 loss: 0.763220480866723
+Tue Dec 17 09:44:50 2019	[64 %] method: baseline n: 1 settings: 50 250 100 loss: 0.693147180559945
+Tue Dec 17 09:44:50 2019	[47 %] method: agraph n: 1 settings: 50 50 100 loss: 0.578103512171234
+Tue Dec 17 09:44:50 2019	[64 %] method: s2net n: 1 settings: 50 250 100 loss: 0.672790830973441
+Tue Dec 17 09:44:50 2019	[64 %] method: glmnet n: 1 settings: 50 250 100 loss: 4.05156953113095
+Tue Dec 17 09:44:51 2019	[31 %] method: s4pm n: 1 settings: 50 250 50 loss: NaN
+Tue Dec 17 09:44:51 2019	[81 %] method: s2net n: 1 settings: 50 50 200 loss: 0.693147180559945
+Tue Dec 17 09:44:51 2019	[81 %] method: baseline n: 1 settings: 50 50 200 loss: 0.693147180559945
+Tue Dec 17 09:44:51 2019	[64 %] method: ICLS n: 1 settings: 50 250 100 loss: 18.435281795109
+Tue Dec 17 09:44:51 2019	[81 %] method: glmnet n: 1 settings: 50 50 200 loss: 0.707727738534513
+Tue Dec 17 09:44:52 2019	[64 %] method: agraph n: 1 settings: 50 250 100 loss: 0.737514163050886
+Tue Dec 17 09:44:52 2019	[64 %] method: s4pm n: 1 settings: 50 250 100 loss: 0.694029208729643
+Tue Dec 17 09:44:52 2019	[81 %] method: s4pm n: 1 settings: 50 50 200 loss: 0.567536404128309
+Tue Dec 17 09:44:52 2019	[97 %] method: s2net n: 1 settings: 50 250 200 loss: 0.693147180559945
+Tue Dec 17 09:44:52 2019	[97 %] method: baseline n: 1 settings: 50 250 200 loss: 0.693147180559945
+Tue Dec 17 09:44:52 2019	[81 %] method: ICLS n: 1 settings: 50 50 200 loss: 15.7585016370837
+Tue Dec 17 09:44:52 2019	[97 %] method: glmnet n: 1 settings: 50 250 200 loss: 0.92077786731761
+Tue Dec 17 09:44:53 2019	[81 %] method: agraph n: 1 settings: 50 50 200 loss: 1.14477531768483
+Tue Dec 17 09:44:53 2019	[97 %] method: ICLS n: 1 settings: 50 250 200 loss: 16.5787905799853
+Tue Dec 17 09:44:54 2019	[97 %] method: s4pm n: 1 settings: 50 250 200 loss: 0.62019558317803
+Tue Dec 17 09:44:54 2019	[97 %] method: agraph n: 1 settings: 50 250 200 loss: 0.694026350475957
+Tue Dec 17 09:44:54 2019	Simulations finished!
+Tue Dec 17 09:44:54 2019	Results saved
+Tue Dec 17 09:44:54 2019	THe END

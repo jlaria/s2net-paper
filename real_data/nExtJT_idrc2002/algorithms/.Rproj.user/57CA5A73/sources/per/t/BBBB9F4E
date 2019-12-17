@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1574326226885.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1071446927",
+    "id" : "BBBB9F4E",
+    "lastKnownWriteTime" : 1574326199,
+    "last_content_update" : 1574326199,
+    "path" : "~/Documents/Doctorado/Estancia/Algorithms/algorithms/orig/jt_code.R",
+    "project_path" : "orig/jt_code.R",
+    "properties" : {
+        "cursorPosition" : "159,3",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

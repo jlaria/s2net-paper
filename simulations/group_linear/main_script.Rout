@@ -1,0 +1,65 @@
+
+R version 3.6.1 (2019-07-05) -- "Action of the Toes"
+Copyright (C) 2019 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> 
+> # Main script
+> # Platform: Personal Computer
+> # Backend: doParallel
+> 
+> #---------------------------
+> # Load common functions     |
+> #---------------------------/
+> source("functions.R")
+Loading required package: Matrix
+Loaded glmnet 3.0-1
+
+> #---------------------------|
+> 
+> #---------------------------
+> # Parallel libraries        |
+> #---------------------------/
+> library(foreach)
+> library(doParallel)
+Loading required package: iterators
+Loading required package: parallel
+> nodes = detectCores()
+> cl = makeCluster(nodes/2) # Specify number of threads here...
+> registerDoParallel(cl)
+> #---------------------------|
+> 
+> #---------------------------
+> # Main script               |
+> #---------------------------/
+> source("body.R")
+There were 50 or more warnings (use warnings() to see the first 50)
+> #---------------------------|
+> 
+> #---------------------------
+> # Save results              |
+> #---------------------------/
+> save.image("results/results.RData")
+> wlog("Results saved")
+> wlog("THe END")
+> stopCluster(cl)
+> #---------------------------|
+> 
+> 
+> proc.time()
+   user  system elapsed 
+ 32.484  20.849  41.455 

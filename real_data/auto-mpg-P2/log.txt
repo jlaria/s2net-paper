@@ -1,0 +1,10 @@
+
+Mon Dec  2 11:28:51 2019	Starting simulations
+Mon Dec  2 11:28:51 2019	Cluster intialized successfully!
+Mon Dec  2 11:28:52 2019	Generating data...
+Mon Dec  2 11:28:52 2019	Entering foreach loop
+Mon Dec  2 11:28:54 2019	[50 %] method: nExtJT n: 1 loss: 4.68161908978895
+Mon Dec  2 11:28:54 2019	[50 %] method: glmnet n: 1 loss: 1.54671410411218
+Mon Dec  2 11:28:54 2019	Simulations finished!
+Mon Dec  2 11:28:54 2019	Results saved
+Mon Dec  2 11:28:54 2019	THe END

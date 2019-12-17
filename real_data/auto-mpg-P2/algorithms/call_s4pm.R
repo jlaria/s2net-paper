@@ -1,0 +1,56 @@
+library(SemiSupervised)
+
+#source("performance.R")
+
+# Wrapper for the s4pm from Culp and Ryan (2018), R package `SemiSupervised`
+# params: hs, lams[1:2], gams
+call_s4pm = function(train, valid, test, params, type = "regression"){
+  # convert to data.frame
+  data = data.frame(y = c(train$yL, rep(NA, nrow(train$xU))), x = rbind(train$xL, train$xU))
+  
+  switch (type,
+    regression = {
+      model = s4pm(y~., data, type = "r", 
+                   hs = params[1],
+                   lams = params[2:3],
+                   gams = params[4])
+      
+      ypred = predict(model, data.frame(x = valid$xL))
+      perf.valid = performance_measures(valid, ypred, "regression", "valid")
+      ypred = predict(model, data.frame(x = test$xL))
+      perf.test = performance_measures(test, ypred, "regression", "test")
+    },
+    classification = {
+      data$y = factor(data$y)
+      model = s4pm(y~., data, type = "c", 
+                   hs = params[1],
+                   lams = params[2:3],
+                   gams = params[4])
+      
+      ypred = as.numeric(predict(model, data.frame(x = valid$xL)))
+      perf.valid = performance_measures(valid, ypred, "classification", "valid")
+      ypred = as.numeric(predict(model, data.frame(x = test$xL))) - 1
+      perf.test = performance_measures(test, ypred, "classification", "test")
+    }
+  )
+  return(c(perf.valid, perf.test))
+}
+
+## Example
+
+# data("auto_mpg")
+# idx = sample(length(auto_mpg$P1$yU), 200)
+# train = s2Data(xL = auto_mpg$P1$xL, yL = auto_mpg$P1$yL, xU = auto_mpg$P1$xU[idx, ])
+# valid = s2Data(xL = auto_mpg$P1$xU[-idx, ], yL = auto_mpg$P1$yU[-idx], preprocess = train)
+# test = s2Data(xL = auto_mpg$P1$xU[idx, ], yL = auto_mpg$P1$yU[idx], preprocess = train)
+# 
+# params = c(hs = 0.01, lams1 = 10, lams2 = 0.1, gams = 0.001)
+# 
+# call_s4pm(train, valid, test, params, "regression")
+# 
+# data = simulate_extra(n = 100, p = 15, response = "logit")
+# train = s2Data(data$xL, data$yL, data$xU[1:50,])
+# valid = s2Data(data$xU[1:20,], data$yU[1:20], preprocess = train)
+# test = s2Data(data$xU, data$yU)
+# 
+# call_s4pm(train, valid, test, params, "classification")

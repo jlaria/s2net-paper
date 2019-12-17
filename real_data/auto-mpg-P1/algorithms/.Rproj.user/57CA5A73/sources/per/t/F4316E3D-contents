@@ -1,0 +1,49 @@
+library(nExtJTRcpp)
+source("performance.R")
+
+# Wrapper for nExtJT
+# params: lambda1, lambda2, gamma1, gamma2, gamma3
+call_nExtJT = function(train, valid, test, params, type = "regression"){
+  switch (type,
+    regression = {
+      model = new(nExtJT, train, 0)
+      model$fit(nExtParams(lambda1 = params[1],
+                           lambda2 = params[2],
+                           gamma1 = params[3],
+                           gamma2 = params[4],
+                           gamma3 = params[5]),
+                frame = 1,
+                proj = 2)
+      
+      ypred = model$predict(valid$xL, 0)
+      perf.valid = performance_measures(valid, ypred, "regression", "valid")
+      ypred = model$predict(test$xL, 0)
+      perf.test = performance_measures(test, ypred, "regression", "test")
+    },
+    classification = {
+      model = new(nExtJT, train, 1)
+      model$fit(nExtParams(lambda1 = params[1],
+                           lambda2 = params[2],
+                           gamma1 = params[3],
+                           gamma2 = params[4],
+                           gamma3 = params[5]),
+                frame = 1,
+                proj = 2)
+      
+      ypred = model$predict(valid$xL, 0)
+      perf.valid = performance_measures(valid, ypred, "classification", "valid")
+      ypred = model$predict(test$xL, 0)
+      perf.test = performance_measures(test, ypred, "classification", "test")
+    }
+  )
+  return(c(perf.valid, perf.test))
+}
+
+# data = simulate_extra(n = 100, p = 15, response = "logit")
+# train = nExtData(data$xL, data$yL, data$xU[1:50,])
+# valid = nExtData(data$xU[1:20,], data$yU[1:20], preprocess = train)
+# test = nExtData(data$xU, data$yU)
+# 
+# params = c(0.01, 0.01, 0.01, 100, 0.01)
+# 
+# call_nExtJT(train, valid, test, params, "classification")

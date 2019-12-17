@@ -1,0 +1,41 @@
+
+# Computes performance measures of a model in some data
+# test: nExtData object
+# ypred: predictions associated with test$xL
+
+performance_measures = function(test, ypred, type = "regression", fold = "."){
+  # predictions: ypred (if type==classification: probabilities)
+  switch (type,
+          regression = {
+            perf = c(loss =  mse(ypred, test$yL),
+                     mae = mae(ypred, test$yL))
+          },
+          classification = {
+            acc = acc(ypred, test$yL)
+            perf = c(loss = 1 - acc,
+                     acc = acc,
+                     auc = auc(ypred, test$yL)
+                     )
+          }
+  )
+  
+  names(perf) = paste0(fold,".", names(perf))
+  return(perf)
+}
+
+mse = function(ypred, ytrue){
+  return(mean((ypred - ytrue)^2))
+}
+
+mae = function(ypred, ytrue){
+  return(mean(abs(ypred - ytrue)))
+}
+
+acc = function(ypred, ytrue){
+  return(mean(((ypred > 0.5)+0) == ytrue))
+}
+
+auc = function(ppred, ytrue){
+  pred = ROCR::prediction(ppred, ytrue)
+  unlist(ROCR::performance(pred, "auc")@y.values)
+}

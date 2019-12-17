@@ -1,0 +1,44 @@
+
+Wed Nov 27 10:47:18 2019	Starting simulations
+Wed Nov 27 10:47:18 2019	Cluster intialized successfully!
+Wed Nov 27 10:47:19 2019	Generating data...
+Wed Nov 27 10:47:20 2019	Entering foreach loop
+Wed Nov 27 10:47:23 2019	[14 %] method: glmnet n: 1 settings: 50 50 50 loss: 0.867992823993588
+Wed Nov 27 10:47:23 2019	[14 %] method: baseline n: 1 settings: 50 50 50 loss: 0.645144918755759
+Wed Nov 27 10:47:23 2019	[14 %] method: nExtJT n: 1 settings: 50 50 50 loss: 0.901574069526711
+Wed Nov 27 10:47:24 2019	[14 %] method: JT n: 1 settings: 50 50 50 loss: 0.891894008273712
+Wed Nov 27 10:47:25 2019	[31 %] method: baseline n: 1 settings: 50 250 50 loss: 0.417187550999421
+Wed Nov 27 10:47:25 2019	[31 %] method: nExtJT n: 1 settings: 50 250 50 loss: 0.246757692890279
+Wed Nov 27 10:47:25 2019	[31 %] method: glmnet n: 1 settings: 50 250 50 loss: 0.152204303707151
+Wed Nov 27 10:47:27 2019	[14 %] method: s4pm n: 1 settings: 50 50 50 loss: 0.910772256118982
+Wed Nov 27 10:47:27 2019	[14 %] method: agraph n: 1 settings: 50 50 50 loss: 0.902670667985129
+Wed Nov 27 10:47:27 2019	[47 %] method: nExtJT n: 1 settings: 50 50 100 loss: 0.568086428325759
+Wed Nov 27 10:47:28 2019	[47 %] method: baseline n: 1 settings: 50 50 100 loss: 0.651167136581068
+Wed Nov 27 10:47:28 2019	[47 %] method: glmnet n: 1 settings: 50 50 100 loss: 0.652635240974756
+Wed Nov 27 10:47:28 2019	[31 %] method: JT n: 1 settings: 50 250 50 loss: 0.232691447044173
+Wed Nov 27 10:47:33 2019	[47 %] method: s4pm n: 1 settings: 50 50 100 loss: 0.687399418939967
+Wed Nov 27 10:47:33 2019	[31 %] method: agraph n: 1 settings: 50 250 50 loss: 0.524617616270761
+Wed Nov 27 10:47:33 2019	[47 %] method: agraph n: 1 settings: 50 50 100 loss: 0.927625573365517
+Wed Nov 27 10:47:34 2019	[47 %] method: JT n: 1 settings: 50 50 100 loss: 0.689659020738392
+Wed Nov 27 10:47:34 2019	[64 %] method: glmnet n: 1 settings: 50 250 100 loss: 0.718551371407177
+Wed Nov 27 10:47:34 2019	[64 %] method: baseline n: 1 settings: 50 250 100 loss: 0.84192347750845
+Wed Nov 27 10:47:34 2019	[64 %] method: nExtJT n: 1 settings: 50 250 100 loss: 0.701665877135719
+Wed Nov 27 10:47:35 2019	[31 %] method: s4pm n: 1 settings: 50 250 50 loss: 0.154895540982198
+Wed Nov 27 10:47:36 2019	[64 %] method: JT n: 1 settings: 50 250 100 loss: 0.74790715347517
+Wed Nov 27 10:47:38 2019	[81 %] method: baseline n: 1 settings: 50 50 200 loss: 0.644889485416983
+Wed Nov 27 10:47:38 2019	[81 %] method: glmnet n: 1 settings: 50 50 200 loss: 0.578810615910456
+Wed Nov 27 10:47:40 2019	[81 %] method: nExtJT n: 1 settings: 50 50 200 loss: 0.82081266692054
+Wed Nov 27 10:47:43 2019	[64 %] method: agraph n: 1 settings: 50 250 100 loss: 0.843911353871943
+Wed Nov 27 10:47:44 2019	[64 %] method: s4pm n: 1 settings: 50 250 100 loss: 0.835585307874879
+Wed Nov 27 10:47:44 2019	[81 %] method: JT n: 1 settings: 50 50 200 loss: 0.717175962771132
+Wed Nov 27 10:47:46 2019	[81 %] method: s4pm n: 1 settings: 50 50 200 loss: 0.800717151433867
+Wed Nov 27 10:47:47 2019	[97 %] method: glmnet n: 1 settings: 50 250 200 loss: 0.413641688976068
+Wed Nov 27 10:47:47 2019	[97 %] method: baseline n: 1 settings: 50 250 200 loss: 0.64508498585448
+Wed Nov 27 10:47:48 2019	[81 %] method: agraph n: 1 settings: 50 50 200 loss: 1.00184868365053
+Wed Nov 27 10:47:51 2019	[97 %] method: JT n: 1 settings: 50 250 200 loss: 0.313481919600876
+Wed Nov 27 10:47:52 2019	[97 %] method: nExtJT n: 1 settings: 50 250 200 loss: 0.423860857585656
+Wed Nov 27 10:47:56 2019	[97 %] method: s4pm n: 1 settings: 50 250 200 loss: 0.29058109119775
+Wed Nov 27 10:47:58 2019	[97 %] method: agraph n: 1 settings: 50 250 200 loss: 0.991042198984033
+Wed Nov 27 10:47:58 2019	Simulations finished!
+Wed Nov 27 10:47:58 2019	Results saved
+Wed Nov 27 10:47:58 2019	THe END

@@ -1,0 +1,10 @@
+
+Fri Nov 29 09:59:28 2019	Starting simulations
+Fri Nov 29 09:59:28 2019	Cluster intialized successfully!
+Fri Nov 29 09:59:28 2019	Generating data...
+Fri Nov 29 09:59:28 2019	Entering foreach loop
+Fri Nov 29 09:59:35 2019	[50 %] method: glmnet n: 1 settings: 50 50 100 1 2.5 loss: 1.01672219190388
+Fri Nov 29 09:59:36 2019	[50 %] method: baseline n: 1 settings: 50 50 100 1 2.5 loss: 6.93390841398483
+Fri Nov 29 09:59:36 2019	Simulations finished!
+Fri Nov 29 09:59:36 2019	Results saved
+Fri Nov 29 09:59:36 2019	THe END
